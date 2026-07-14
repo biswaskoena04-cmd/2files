@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-07-14 19:59:38 UTC",
+  "summary": {
+    "harness_generation_failures": 2,
+    "compile_failures": 4,
+    "fuzz_crashes_or_timeouts": 0
+  },
+  "harness_generation_failures": [
+    {
+      "file": "5.cpp",
+      "function_name": "jerry_port_read_source",
+      "status": null,
+      "error": "function not found in fuzz source"
+    },
+    {
+      "file": "5.cpp",
+      "function_name": "jerry_port_get_file_size",
+      "status": null,
+      "error": "unsupported parameter type: FILE *"
+    }
+  ],
+  "compile_failures": [
+    {
+      "file": "6.cpp",
+      "function_name": "parse_month",
+      "harness_path": null,
+      "compile_status": null,
+      "compile_log": null
+    },
+    {
+      "file": "CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_72b.cpp",
+      "function_name": "badSink",
+      "harness_path": null,
+      "compile_status": null,
+      "compile_log": null
+    },
+    {
+      "file": "CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_72b.cpp",
+      "function_name": "goodG2BSink",
+      "harness_path": null,
+      "compile_status": null,
+      "compile_log": null
+    },
+    {
+      "file": "CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_72b.cpp",
+      "function_name": "goodB2GSink",
+      "harness_path": null,
+      "compile_status": null,
+      "compile_log": null
+    }
+  ],
+  "fuzz_crashes": []
+}
