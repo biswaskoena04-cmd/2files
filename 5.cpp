@@ -14,7 +14,7 @@ typedef uint8_t uint8_t_alias;
 // Dummy log
 static void jerry_port_log(int level, const char *fmt, const char *arg) {
     (void)level;
-    fprintf(stderr, fmt, arg);
+    fprintf(stderr, "%s", arg);
 }
 #define JERRY_LOG_LEVEL_ERROR 0
 
