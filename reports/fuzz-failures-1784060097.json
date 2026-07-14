@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-07-14 20:14:56 UTC",
+  "summary": {
+    "manual_harness_generation": 2,
+    "failed_compilation": 4,
+    "failed_fuzzing": 0,
+    "total": 6
+  },
+  "failures": [
+    {
+      "file": "5.cpp",
+      "function_name": "jerry_port_read_source",
+      "start_line": null,
+      "end_line": null,
+      "reason": "manual_harness_generation",
+      "log": null
+    },
+    {
+      "file": "5.cpp",
+      "function_name": "jerry_port_get_file_size",
+      "start_line": null,
+      "end_line": null,
+      "reason": "manual_harness_generation",
+      "log": null
+    },
+    {
+      "file": "6.cpp",
+      "function_name": "parse_month",
+      "start_line": null,
+      "end_line": null,
+      "reason": "failed_compilation",
+      "log": "/kaggle/working/tmp_parse_month.cpp:21:20: error: redefinition of \u2018const char* month_names []\u2019\n   21 | static const char *month_names[] = {\n      |                    ^~~~~~~~~~~\n/kaggle/working/tmp_parse_month.cpp:10:20: note: \u2018const char* month_names [12]\u2019 previously defined here\n   10 | static const char *month_names[] = {\n      |                    ^~~~~~~~~~~\n"
+    },
+    {
+      "file": "CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_72b.cpp",
+      "function_name": "badSink",
+      "start_line": null,
+      "end_line": null,
+      "reason": "failed_compilation",
+      "log": "/kaggle/working/tmp_badSink.cpp:18:10: fatal error: std_testcase.h: No such file or directory\n   18 | #include \"std_testcase.h\"\n      |          ^~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "file": "CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_72b.cpp",
+      "function_name": "goodG2BSink",
+      "start_line": null,
+      "end_line": null,
+      "reason": "failed_compilation",
+      "log": "/kaggle/working/tmp_goodG2BSink.cpp:18:10: fatal error: std_testcase.h: No such file or directory\n   18 | #include \"std_testcase.h\"\n      |          ^~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "file": "CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_72b.cpp",
+      "function_name": "goodB2GSink",
+      "start_line": null,
+      "end_line": null,
+      "reason": "failed_compilation",
+      "log": "/kaggle/working/tmp_goodB2GSink.cpp:18:10: fatal error: std_testcase.h: No such file or directory\n   18 | #include \"std_testcase.h\"\n      |          ^~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+    }
+  ]
+}
