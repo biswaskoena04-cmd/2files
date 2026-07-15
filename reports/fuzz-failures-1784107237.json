@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-07-15 09:20:36 UTC",
+  "summary": {
+    "manual_harness_generation": 2,
+    "failed_compilation": 5,
+    "failed_fuzzing": 0,
+    "total": 7
+  },
+  "failures": [
+    {
+      "file": "5.cpp",
+      "function_name": "jerry_port_read_source",
+      "start_line": 32,
+      "end_line": 64,
+      "reason": "manual_harness_generation",
+      "log": null
+    },
+    {
+      "file": "5.cpp",
+      "function_name": "jerry_port_get_file_size",
+      "start_line": 22,
+      "end_line": 28,
+      "reason": "manual_harness_generation",
+      "log": null
+    },
+    {
+      "file": "5.cpp",
+      "function_name": "jerry_port_log",
+      "start_line": 15,
+      "end_line": 18,
+      "reason": "failed_compilation",
+      "log": "/kaggle/working/tmp_jerry_port_log.cpp: In function \u2018void jerry_port_log(int, const char*, ...)\u2019:\n/kaggle/working/tmp_jerry_port_log.cpp:17:5: error: \u2018va_start\u2019 was not declared in this scope\n   17 |     va_start(args, fmt);\n      |     ^~~~~~~~\n/kaggle/working/tmp_jerry_port_log.cpp:19:5: error: \u2018va_end\u2019 was not declared in this scope\n   19 |     va_end(args);\n      |     ^~~~~~\n/kaggle/working/tmp_jerry_port_log.cpp:21:18: error: \u2018JERRY_LOG_LEVEL_ERROR\u2019 was not declared in this scope\n   21 |     if (level == JERRY_LOG_LEVEL_ERROR)\n      |                  ^~~~~~~~~~~~~~~~~~~~~\n/kaggle/working/tmp_jerry_port_log.cpp:21:18: note: the macro \u2018JERRY_LOG_LEVEL_ERROR\u2019 had not yet been defined\n/kaggle/working/tmp_jerry_port_log.cpp:24: note: it was later defined here\n   24 | #define JERRY_LOG_LEVEL_ERROR 0\n      | \n"
+    },
+    {
+      "file": "6.cpp",
+      "function_name": "parse_month",
+      "start_line": 21,
+      "end_line": 33,
+      "reason": "failed_compilation",
+      "log": "/kaggle/working/tmp_parse_month.cpp:21:20: error: redefinition of \u2018const char* month_names []\u2019\n   21 | static const char *month_names[] = {\n      |                    ^~~~~~~~~~~\n/kaggle/working/tmp_parse_month.cpp:10:20: note: \u2018const char* month_names [12]\u2019 previously defined here\n   10 | static const char *month_names[] = {\n      |                    ^~~~~~~~~~~\n"
+    },
+    {
+      "file": "CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_72b.cpp",
+      "function_name": "badSink",
+      "start_line": 28,
+      "end_line": 51,
+      "reason": "failed_compilation",
+      "log": "/kaggle/working/tmp_badSink.cpp:18:10: fatal error: std_testcase.h: No such file or directory\n   18 | #include \"std_testcase.h\"\n      |          ^~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "file": "CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_72b.cpp",
+      "function_name": "goodG2BSink",
+      "start_line": 58,
+      "end_line": 80,
+      "reason": "failed_compilation",
+      "log": "/kaggle/working/tmp_goodG2BSink.cpp:18:10: fatal error: std_testcase.h: No such file or directory\n   18 | #include \"std_testcase.h\"\n      |          ^~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "file": "CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_72b.cpp",
+      "function_name": "goodB2GSink",
+      "start_line": 83,
+      "end_line": 104,
+      "reason": "failed_compilation",
+      "log": "/kaggle/working/tmp_goodB2GSink.cpp:18:10: fatal error: std_testcase.h: No such file or directory\n   18 | #include \"std_testcase.h\"\n      |          ^~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+    }
+  ],
+  "skipped": [
+    {
+      "file": "5.cpp",
+      "function_name": "main",
+      "start_line": 66,
+      "end_line": 78,
+      "reason": "main is never a fuzz target"
+    }
+  ]
+}
